@@ -145,9 +145,10 @@ body{
     }
     .container-fluid nav{
         width: 100% !important;
-        height: 100px;
+        height: 70px;
         position: absolute;
         left: 0;
+        padding-top: 5px;
 
     }
     .container-fluid nav .content{
