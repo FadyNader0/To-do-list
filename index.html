@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container-fluid d-flex">
+        <nav>
+            <div class="content">
+                <div class="head d-flex justify-content-between align-items-center">
+                    <h1>To<span style="color: aqua;">Do</span></h1>
+                    <img src="./images/my_image.jpg" alt="">
+                </div>
+                <div class="links">
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex align-items-center mt-4 ms-3 p-2">
+                            <img src="./images/dash_icon.png" alt="">  
+                            <a class="ms-2 fs-4" href="#">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="sections">
+            <div class="nav_bar d-flex align-items-center">
+                <i class="fa-solid fa-list-check list me-4 fs-4"></i>
+                <i class="fa-solid fa-greater-than me-4 fs-4"></i>
+                <p class="fs-4">Dashboard</p>
+            </div>  
+            <section class="dash_board">
+                <div class="head d-flex justify-content-between">
+                    <h2 class="fs-1">My Todo</h2>
+                    <div class="new_task d-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center me-3">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                            <p>New task</p>
+                        </a>
+                        <img src="./images/my_image.jpg" alt="">
+                    </div>
+                </div>
+                <form class="filter d-flex justify-content-between align-items-center">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search" id="search_input">
+                        <i class="fa fa-search"></i>
+                    </div> 
+                    <div class="add_task d-flex">
+                        <a href="#" class="d-none new_task">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="">
+
+                            <img src="./images/date_icon.png" alt="" class="d-none">
+                        </a>
+                    </div> 
+                    <div class="date d-flex">
+                        <div class="from me-3">
+                            <label for="date_from">From</label>
+                            <input type="date" id="date_from" class="form-control me-4">
+                        </div>
+                        <div class="to">
+                            <label for="date_to">To</label>
+                            <input type="date" id="date_to" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </div>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* start rules  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    border: none;
+    box-shadow: none;
+}
+body{
+    background-color: #202d48;
+    /* height: 3000px; */
+}
+/* end rules  */
+
+
+
+/* start nav  */
+
+.container-fluid nav{
+    width: 270px;
+    background-color: #202d48;
+    color: white;
+    height: 100vh;
+    padding: 20px 10px;
+}
+.container-fluid nav .content{
+    position: fixed;
+}
+.container-fluid nav .content .head img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: none;
+}
+.container-fluid nav .content .links ul li{
+    background-color: #334977;
+    border-radius: 10px;
+}
+.container-fluid nav .content .links ul li:hover{
+    background-color: #3b548a;
+}
+.container-fluid nav .content .links ul li img{
+    width: 35px;
+}
+/* end nav  */
+
+
+
+/* strat sections */
+.container-fluid .sections{
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 0 60px;
+    padding-top: 70px;
+}
+
+.container-fluid .sections .nav_bar{
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.container-fluid .sections .dash_board .head{
+    margin-bottom: 30px;
+}
+.container-fluid .sections .dash_board .head .new_task a{
+    background-color: #202d48;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.container-fluid .sections .dash_board .head .new_task a i{
+    margin-right: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%; 
+}
+
+.container-fluid .sections .dash_board .head .new_task img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.container-fluid .sections .dash_board .filter .search-box {
+    position: relative;
+}
+.container-fluid .sections .dash_board .filter .search-box input {
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #334977;
+    border-radius: 5px;
+    outline: none;
+}
+.container-fluid .sections .dash_board .filter .search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+.container-fluid .sections .dash_board .filter .date .to input,
+.container-fluid .sections .dash_board .filter .date .from input{
+    box-shadow: none;
+    outline: none;
+}
+.container-fluid .sections .dash_board .filter .date .to label,
+.container-fluid .sections .dash_board .filter .date .from label{
+    margin-left: 10px;
+}
+/* end sections */
+
+
+
+/* start respnsive  */
+
+@media(max-width: 955px){
+    body{
+        background-color: white;
+    }
+    .container-fluid{
+        display: block !important;
+        background-color: aqua;
+        position: relative;
+    }
+    .container-fluid nav{
+        width: 100% !important;
+        height: 100px;
+        position: absolute;
+        left: 0;
+
+    }
+    .container-fluid nav .content{
+        width: 100%;
+        position: static;
+    }
+    .container-fluid nav .content .head{
+        width: 100%;
+    }
+    .container-fluid nav .content .head img{
+        display: block;
+    }
+    .container-fluid nav .content .links{
+        display: none;
+    }
+    .container-fluid .sections{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+
+    }
+}
+
+
+@media(max-width: 770px){
+    .container-fluid .sections{
+        margin-top: 20px;
+        padding: 0 10px;
+
+    }
+    .container-fluid .sections .nav_bar{
+        display: none !important;
+    }
+    .container-fluid .sections .dash_board .head{
+        display: none !important;
+    }
+    .container-fluid .sections .dash_board .filter .search-box input{
+        width: 100%;
+    }
+    .container-fluid .sections .dash_board .filter .add_task .new_task{
+        display: block !important;
+        background-color: #334977;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .container-fluid .sections .dash_board .filter .add_task .new_task i{
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .container-fluid .sections .dash_board .filter .add_task img{
+        display: block !important;
+        width: 50px;
+    }
+    .container-fluid .sections .dash_board .filter .date{
+        display: none !important;
+    }
+}
+
+
+
+
+
+/* end respnsive  */
